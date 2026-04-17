@@ -9,8 +9,6 @@
 
 <body class="login-body">
 
-<a href="recuperar.html" class="voltar">←</a>
-
 <div class="login-container">
 <div class="login-box">
 
@@ -24,11 +22,14 @@ Digite o código de 5 dígitos abaixo
 </p>
 
 <div class="codigo-container">
-<input maxlength="1">
-<input maxlength="1">
-<input maxlength="1">
-<input maxlength="1">
-<input maxlength="1">
+<input 
+type="text" 
+placeholder="Digite o código" 
+maxlength="5" 
+pattern="\d{5}" 
+inputmode="numeric"
+required
+>
 </div>
 
 <form action="nova-senha.html">
