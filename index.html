@@ -16,7 +16,7 @@
     <nav class="menu">
         <a href="index.html" class="ativo">Paletas</a>
         <a href="fabrica-layout.html">Fábrica de layouts</a>
-        <a href="favoritos.html">Favoritos</a>
+        
     </nav>
 
     <a href="login.html" class="menu-icon">☰</a>
@@ -175,7 +175,39 @@
         <button class="btn-analisar">Analisar</button>
     </div>
 
+
+
 </main>
+
+  <div class="chat-btn" onclick="abrirChat()">💬</div>
+
+<!-- CHAT -->
+<div class="chat-overlay" id="chat">
+    <div class="chat-box">
+        <span class="fechar" onclick="fecharChat()">✖</span>
+
+        <div class="chat-mensagens">
+            <div class="msg-bot">Olá! Posso sugerir paletas 🎨</div>
+        </div>
+
+        <div class="chat-input">
+            <input type="text" placeholder="Digite sua mensagem...">
+            <button>Enviar</button>
+        </div>
+    </div>
+</div>
+
+<!-- JS SIMPLES -->
+<script>
+function abrirChat(){
+    document.getElementById("chat").style.display = "flex";
+}
+
+function fecharChat(){
+    document.getElementById("chat").style.display = "none";
+}
+</script>
+
 
 </body>
 </html>
